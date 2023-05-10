@@ -19,7 +19,10 @@ export default class UserService
   findByid(id){
       return http.get("/user/getUserById/"+id);
   }
-  
+  lokin(data)
+  {
+    return http.post("/user/lo")
+  }
 }
 //  getCarsOfOneUser(id){
 

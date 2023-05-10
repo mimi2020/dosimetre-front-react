@@ -112,14 +112,14 @@ const phoneRegExp =
 const checkoutSchema = yup.object().shape({
    name: yup.string().required("required"),
 valeur: yup.string().required("required"),
-photo: yup
-      .mixed()
-      .required("Required")
-      .test("is-valid-type", "Not a valid image type",
-    //     value => isValidFileType(value && value.name.toLowerCase(), "image"))
-    //   .test("is-valid-size", "Max allowed size is 100KB",
-    //     value => value && value.size <= MAX_FILE_SIZE
-    )
+// photo: yup
+//       .mixed()
+//       .required("Required")
+//       .test("is-valid-type", "Not a valid image type",
+//     //     value => isValidFileType(value && value.name.toLowerCase(), "image"))
+//     //   .test("is-valid-size", "Max allowed size is 100KB",
+//     //     value => value && value.size <= MAX_FILE_SIZE
+//     )
 
  
 });
@@ -133,7 +133,7 @@ function isValidFileType(fileName, fileType) {
 const initialValues = {
     name: "",
     valeur: "0",
-    photo:""
+    // photo:""
     //   email: "",
     //   contact: "",
     //   address1: "",
