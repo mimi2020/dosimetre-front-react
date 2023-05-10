@@ -107,10 +107,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-               C2i
+                  C2i
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                Radio Protection
+                  Radio Protection
                 </Typography>
               </Box>
             </Box>
@@ -139,6 +139,20 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+             <Item
+              title="Add Dose"
+              to="/AddDose"
+              icon={<PeopleOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+                 <Item
+              title="Add User"
+              to="/AddUser"
+              icon={<PeopleOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
             <Item
               title="Contacts Information"
               to="/contacts"
@@ -153,9 +167,17 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-   <Item
+            <Item
               title="Rim"
               to="/Rim"
+              icon={<ReceiptOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+<Item
+              title="Doses"
+              to="/ListeDesDose"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

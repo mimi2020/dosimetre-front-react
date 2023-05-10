@@ -16,6 +16,9 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
 import Rim from "./components/Rim"
+import ListeDesDose from './components/ListeDesDose'
+import AddDose from "./components/AddDose.jsx"
+import AddUser from './components/AddUser.jsx'
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
@@ -41,6 +44,9 @@ function App() {
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/geography" element={<Geography />} />
               <Route path="/Rim" element={<Rim />} />
+              <Route path="/ListeDesDose" element={<ListeDesDose/>} />
+              <Route path="/AddDose" element={<AddDose/>} />
+              <Route path="/AddUser" element={<AddUser/>} />
             </Routes>
           </main>
         </div>
